@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "module": "NodeNext",
+    "outDir": "./vitepress/dist",
     "allowJs": true,
     "strict": true,
     "jsx": "preserve"
   },
-  "include": ["./.vitepress/**/*"]
+  "include": ["./.vitepress/**/*", "./vitepress/dist/**/*"]
 }

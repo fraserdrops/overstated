@@ -19,6 +19,10 @@ p img {
   border-top: 1px solid #e5e7eb;
 }
 
+.prose a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+}
+
 .link {
   color: var(--c-brand);
 }

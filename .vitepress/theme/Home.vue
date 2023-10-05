@@ -18,9 +18,14 @@ const { frontmatter } = useData()
         {{ frontmatter.subtext }}
       </p>
     </div>
-    <ul class="divide-y divide-gray-200 dark:divide-slate-200/5">
-      <li class="py-12" v-for="{ title, url, date, excerpt } of posts">
-        <article
+    <ul>
+      <li class="py-1" v-for="{ title, url, date, excerpt } of posts">
+        <a
+          class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+          :href="url"
+          >{{ title }}</a
+        >
+        <!-- <article
           class="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline"
         >
           <Date :date="date" />
@@ -41,7 +46,7 @@ const { frontmatter } = useData()
               <a class="link" aria-label="read more" :href="url">Read more →</a>
             </div>
           </div>
-        </article>
+        </article> -->
       </li>
     </ul>
   </div>
