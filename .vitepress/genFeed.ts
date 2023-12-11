@@ -8,14 +8,13 @@ const baseUrl = `https://blog.vuejs.org`
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
     title: 'Overstated',
-    description: 'The official blog for the Vue.js project',
+    description: 'Exploring the complexities of modern software development',
     id: baseUrl,
     link: baseUrl,
     language: 'en',
     image: 'https://vuejs.org/images/logo.png',
     favicon: `${baseUrl}/favicon.ico`,
-    copyright:
-      'Copyright (c) 2021-present, Yuxi (Evan) You and blog contributors'
+    copyright: 'Copyright (c) 2023-present'
   })
 
   const posts = await createContentLoader('posts/*.md', {

@@ -7,6 +7,16 @@
   --c-brand-light: #4abf8a;
 }
 
+body {
+  background: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a202c;
+  }
+}
+
 nav img {
   vertical-align: middle;
 }

@@ -8,8 +8,11 @@ const { page, frontmatter } = useData()
 </script>
 
 <template>
-  <div class="antialiased dark:bg-slate-900">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+  <div class="antialiased">
+    <div
+      v-if="!frontmatter.index"
+      class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0"
+    >
       <nav class="flex justify-between items-center py-10 font-bold">
         <a class="text-xl" href="/" aria-label="Overstated">
           <img
@@ -20,32 +23,23 @@ const { page, frontmatter } = useData()
           />
           <span class="hidden md:inline dark:text-white">Overstated</span>
         </a>
-        <!-- <div class="text-sm text-gray-500 dark:text-white leading-5">
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://github.com/vuejs/blog"
-            target="_blank"
-            rel="noopener"
-            ><span class="hidden sm:inline">GitHub </span>Source</a
-          >
-          <span class="mr-2 ml-2">·</span>
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="/feed.rss"
-            >RSS<span class="hidden sm:inline"> Feed</span></a
-          >
-          <span class="mr-2 ml-2">·</span>
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://vuejs.org"
-            target="_blank"
-            rel="noopener"
-            >Vuejs.org →</a
-          >
-        </div> -->
       </nav>
     </div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-1xl xl:px-0">
+      <div v-if="frontmatter.index" class="flex items-center mt-20">
+        <img
+          class="inline-block mr-2"
+          style="width: 60px; height: 60px"
+          alt="logo"
+          src="/logo.svg"
+        />
+        <h1
+          class="text-3xl leading-9 font-bold text-gray-900 dark:text-white tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+        >
+          Overstated
+        </h1>
+      </div>
+
       <Content
         v-if="frontmatter.index"
         class="prose dark:prose-invert max-w-none pb-8"
