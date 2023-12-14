@@ -6,9 +6,9 @@ index: true
 
 ## Recent posts
 
-[Backlog Modelling Exercise](./posts/backlog-modelling-exercise.md)
+[Backlog Modelling Exercise](./backlog-modelling-exercise.md)
 
-[Modelling a Backlog Application with Statecharts](./posts/backlog-modelling-statecharts.md)
+[Modelling a Backlog Application with Statecharts](./modelling-a-backlog-app-with-statecharts.md)
 
 ## Currently Exploring
 
@@ -16,9 +16,9 @@ index: true
 
 Modelling exercises serve as a way to practice and develop techniques that will hopefully be applicable to large production applications.
 
-[Backlog Modelling Exercise](./posts/backlog-modelling-exercise.md)
+[Backlog Modelling Exercise](./backlog-modelling-exercise.md)
 
-- [Statechart solution](./posts/backlog-modelling-statecharts.md)
+- [Statechart solution](./modelling-a-backlog-app-with-statecharts.md)
 
 ### Complexity Metrics
 
@@ -32,6 +32,8 @@ Imagine a world where you could say "I'm building x app which has 8/10 interacti
 ### Eventcharts
 
 A novel notation to overcome the problems with statecharts at scale.
+
+Motivation - [A DSL for Events](./a-dsl-for-events.md)
 
 ### The History of Reactive Programming
 
@@ -49,3 +51,8 @@ Commonly-used terms without a common definition
 
 - Does the Clustering Problem appear in other areas?
 - Can we remove double reactivity from GUIs?
+
+## Log
+
+[0001 - coupling statecharts to UI, eventcharts, b-trees vs fsms](./log-0001.md)<br/>
+[0002 - chains of thought, backlog app, compDSL](./log-0002.md)

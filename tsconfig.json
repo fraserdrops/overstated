@@ -6,5 +6,5 @@
     "strict": true,
     "jsx": "preserve"
   },
-  "include": ["./.vitepress/**/*", "./vitepress/dist/**/*"]
+  "include": [".vitepress/**/*./vitepress/dist/**/*"]
 }

@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs'
 import path from 'path'
 import { createContentLoader, type SiteConfig } from 'vitepress'
 
-const baseUrl = `https://blog.vuejs.org`
+const baseUrl = `https://overstated.dev`
 
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
@@ -12,12 +12,12 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'en',
-    image: 'https://vuejs.org/images/logo.png',
+    image: 'https://overstated.dev/logo.svg',
     favicon: `${baseUrl}/favicon.ico`,
     copyright: 'Copyright (c) 2023-present'
   })
 
-  const posts = await createContentLoader('posts/*.md', {
+  const posts = await createContentLoader('src/*.md', {
     excerpt: true,
     render: true
   }).load()

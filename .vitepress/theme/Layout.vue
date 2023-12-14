@@ -26,7 +26,7 @@ const { page, frontmatter } = useData()
       </nav>
     </div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-1xl xl:px-0">
-      <div v-if="frontmatter.index" class="flex items-center mt-20">
+      <div v-if="frontmatter.index" class="flex items-center mt-10 -ml-5">
         <img
           class="inline-block mr-2"
           style="width: 60px; height: 60px"

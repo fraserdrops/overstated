@@ -24,5 +24,6 @@ export default defineConfig({
       }
     ]
   ],
-  buildEnd: genFeed
+  buildEnd: genFeed,
+  srcDir: 'src'
 })
