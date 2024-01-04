@@ -6,9 +6,9 @@ index: true
 
 ## Recent posts
 
+[0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)<br/>
+[Modelling a Backlog Application with Statecharts](./modelling-a-backlog-app-with-statecharts.md)<br/>
 [Backlog Modelling Exercise](./backlog-modelling-exercise.md)
-
-[Modelling a Backlog Application with Statecharts](./modelling-a-backlog-app-with-statecharts.md)
 
 ## Currently Exploring
 
@@ -54,5 +54,6 @@ Commonly-used terms without a common definition
 
 ## Log
 
-[0001 - coupling statecharts to UI, eventcharts, b-trees vs fsms](./log-0001.md)<br/>
-[0002 - chains of thought, backlog app, compDSL](./log-0002.md)
+[0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)<br/>
+[0002 - chains of thought, backlog app, compDSL](./log-0002.md)<br/>
+[0001 - coupling statecharts to UI, eventcharts, b-trees vs fsms](./log-0001.md)
