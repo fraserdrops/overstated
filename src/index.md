@@ -2,6 +2,7 @@
 title: Home
 subtext: Exploring the complexities of modern software development
 index: true
+date: 2023-10-01
 ---
 
 ## Recent posts
