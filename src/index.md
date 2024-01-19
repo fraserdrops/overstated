@@ -6,9 +6,10 @@ index: true
 
 ## Recent posts
 
-[0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)<br/>
-[Modelling a Backlog Application with Statecharts](./modelling-a-backlog-app-with-statecharts.md)<br/>
-[Backlog Modelling Exercise](./backlog-modelling-exercise.md)
+- [Notes on Sequentially Constructive Concurrency](./notes-on-sequentially-constrcutive-concurrency.md)
+- [Log 0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)
+- [Modelling a Backlog Application with Statecharts](./modelling-a-backlog-app-with-statecharts.md)
+- [Backlog Modelling Exercise](./backlog-modelling-exercise.md)
 
 ## Currently Exploring
 
@@ -52,8 +53,12 @@ Commonly-used terms without a common definition
 - Does the Clustering Problem appear in other areas?
 - Can we remove double reactivity from GUIs?
 
+## Notes On
+
+- [Sequentially Constructive Concurrency](./notes-on-sequentially-constrcutive-concurrency.md)
+
 ## Log
 
-[0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)<br/>
-[0002 - chains of thought, backlog app, compDSL](./log-0002.md)<br/>
-[0001 - coupling statecharts to UI, eventcharts, b-trees vs fsms](./log-0001.md)
+- [0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./log-0003.md)
+- [0002 - chains of thought, backlog app, compDSL](./log-0002.md)
+- [0001 - coupling statecharts to UI, eventcharts, b-trees vs fsms](./log-0001.md)
