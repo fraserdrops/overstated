@@ -18,12 +18,15 @@ export default createContentLoader('src/*.md', {
   transform(raw): Post[] {
     console.log('posts.data', raw)
     return raw
-      .map(({ url, frontmatter, excerpt }) => ({
-        title: frontmatter.title,
-        url,
-        excerpt,
-        date: formatDate(frontmatter.date)
-      }))
+      .map(({ url, frontmatter, excerpt }) => {
+        console.log('posts.data frontmatter', frontmatter, frontmatter.date)
+        return {
+          title: frontmatter.title,
+          url,
+          excerpt,
+          date: formatDate(frontmatter.date)
+        }
+      })
       .sort((a, b) => b.date.time - a.date.time)
   }
 })
