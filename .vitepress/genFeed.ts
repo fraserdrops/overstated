@@ -21,7 +21,7 @@ export async function genFeed(config: SiteConfig) {
     excerpt: true,
     render: true
   }).load()
-
+  console.log('genFeed', posts)
   posts.sort(
     (a, b) =>
       +new Date(b.frontmatter.date as string) -

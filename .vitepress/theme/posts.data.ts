@@ -16,6 +16,7 @@ export { data }
 export default createContentLoader('src/*.md', {
   excerpt: true,
   transform(raw): Post[] {
+    console.log('posts.data', raw)
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
         title: frontmatter.title,
