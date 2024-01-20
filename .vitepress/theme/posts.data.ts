@@ -20,9 +20,11 @@ export default createContentLoader('src/*.md', {
     return raw
       .map(({ url, frontmatter, excerpt }) => {
         console.log('posts.data frontmatter', frontmatter, frontmatter.date)
+
         return {
           title: frontmatter.title,
-          url,
+          // remove /src from front of url
+          url: url.slice(4),
           excerpt,
           date: formatDate(frontmatter.date)
         }
