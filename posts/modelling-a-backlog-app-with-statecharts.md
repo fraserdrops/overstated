@@ -5,7 +5,7 @@ date: 2023-10-04
 
 ## Introduction
 
-This is my attempt at the [Backlog Modelling Exercise](./posts/modelling-a-backlog-app-with-statecharts.md). I created the exercise to try and address the lack of example applications to serve as reference for software modelling discussions.
+This is my attempt at the [Backlog Modelling Exercise](./backlog-modelling-exercise.md). I created the exercise to try and address the lack of example applications to serve as reference for software modelling discussions.
 
 To serve as a comparison alongside my model, I called upon the services of my AIssistant to develop their own model. Their model is extremely representative of statechart models I see in the wild.
 
