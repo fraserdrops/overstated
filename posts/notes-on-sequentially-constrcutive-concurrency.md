@@ -46,8 +46,9 @@ if (!done) {
 ## How
 
 A small SC language (SCL) is created to demonstrate the SC MoC (it could apply to many languages). An SC Graph (SCG) is an internal representation of the concurrent and sequential control flow, used for analysis and code generation.
-![Mapping between SCG and SCL](./assets/sequentially-constructive-scg-scl-mapping.png)
+![Mapping between SCG and SCL](/assets/sequentially-constructive-scg-scl-mapping.png)
 The three types of violations in the Sequentially Constructive Model of Computation (SC MoC) are:
+_caption_
 
 1. **Non-confluent Writes Violation**: This occurs when two operations write to the same variable in a way that the result depends on the order of the writes. Since this order isn't guaranteed in concurrent programming, it leads to unpredictable outcomes.
 2. **Read-After-Write Violation**: This happens when a variable is read and then written to in the same tick by different operations. The read operation might not get the latest value, leading to inconsistencies.

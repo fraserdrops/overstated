@@ -3,7 +3,7 @@ import { genFeed } from './genFeed.js'
 
 export default defineConfig({
   title: 'Overstated',
-  description: 'The offical blog for the Vue.js project',
+  description: 'Exploring the complexities of modern software development',
   cleanUrls: true,
   head: [
     // ['meta', { name: 'twitter:site', content: '@vuejs' }],
@@ -24,6 +24,5 @@ export default defineConfig({
       }
     ]
   ],
-  buildEnd: genFeed,
-  srcDir: 'src'
+  buildEnd: genFeed
 })

@@ -13,22 +13,16 @@ export interface Post {
 declare const data: Post[]
 export { data }
 
-export default createContentLoader('src/*.md', {
+export default createContentLoader('posts/*.md', {
   excerpt: true,
   transform(raw): Post[] {
-    console.log('posts.data', raw)
     return raw
-      .map(({ url, frontmatter, excerpt }) => {
-        console.log('posts.data frontmatter', frontmatter, frontmatter.date)
-
-        return {
-          title: frontmatter.title,
-          // remove /src from front of url
-          url: url.slice(4),
-          excerpt,
-          date: formatDate(frontmatter.date)
-        }
-      })
+      .map(({ url, frontmatter, excerpt }) => ({
+        title: frontmatter.title,
+        url,
+        excerpt,
+        date: formatDate(frontmatter.date)
+      }))
       .sort((a, b) => b.date.time - a.date.time)
   }
 })

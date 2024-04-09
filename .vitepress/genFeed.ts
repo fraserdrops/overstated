@@ -17,11 +17,11 @@ export async function genFeed(config: SiteConfig) {
     copyright: 'Copyright (c) 2023-present'
   })
 
-  const posts = await createContentLoader('src/*.md', {
+  const posts = await createContentLoader('posts/*.md', {
     excerpt: true,
     render: true
   }).load()
-  console.log('genFeed', posts)
+  console.log('posts', posts)
   posts.sort(
     (a, b) =>
       +new Date(b.frontmatter.date as string) -

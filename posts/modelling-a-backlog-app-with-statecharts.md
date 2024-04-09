@@ -5,7 +5,7 @@ date: 2023-10-04
 
 ## Introduction
 
-This is my attempt at the [Backlog Modelling Exercise](./modelling-a-backlog-app-with-statecharts.md). I created the exercise to try and address the lack of example applications to serve as reference for software modelling discussions.
+This is my attempt at the [Backlog Modelling Exercise](./posts/modelling-a-backlog-app-with-statecharts.md). I created the exercise to try and address the lack of example applications to serve as reference for software modelling discussions.
 
 To serve as a comparison alongside my model, I called upon the services of my AIssistant to develop their own model. Their model is extremely representative of statechart models I see in the wild.
 
@@ -13,7 +13,7 @@ Modelling is subjective, and it's hard to compare different models. The Backlog 
 
 ## AIssistant's v0 model
 
-![AIssistant v0](./assets/aissistantv0.png)
+![AIssistant v0](/assets/modelling-a-backlog-app-with-statecharts/aissistantv0.png)
 
 ### Key features
 
@@ -25,7 +25,7 @@ I would describe this model as 'hierarchical' - there are no parallel states use
 
 ## My v0 Model
 
-![My v0](./assets/myv0.png)
+![My v0](/assets/modelling-a-backlog-app-with-statecharts/myv0.png)
 
 ### Key features
 
@@ -56,7 +56,7 @@ Right away, AIssistant's model has a problem. It assumes that the ticket details
 
 The solution to allow for parallel loading is, unsurprisingly, to use parallel states - `details` needs to be put in parallel with `list`
 
-![AIssistant v1](./assets/aissistantv1.png)
+![AIssistant v1](/assets/modelling-a-backlog-app-with-statecharts/aissistantv1.png)
 
 Instead of a deep hierarchical structure it's now a shallower and more parallel.
 
@@ -72,7 +72,7 @@ No changes required.
 
 AIssistant's v1 model assumes that updating the ticket details only happens when the user is viewing ticket details. Similar to the previous feature request, this new feature breaks that assumption because the user can update details from the list or the details. To accomodate this new feature the `updateDetails` state needs to be moved into parallel with `details` and `list`.
 
-![AIssistant v2](./assets/aissistantv2.png)
+![AIssistant v2](/assets/modelling-a-backlog-app-with-statecharts/aissistantv2.png)
 
 ### Changes to my v1 model
 
