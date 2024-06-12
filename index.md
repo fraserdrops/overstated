@@ -7,8 +7,8 @@ date: 2023-10-01
 
 ## Recent posts
 
+- [The Switchboard Approach to Actor Composition](./posts/the-switchboard-approach-to-actor-composition.md)
 - [Notes on Programming Paradigms for Dummies](./posts/notes-on-programming-paradigms-for-dummies)
-- [Notes on Sequentially Constructive Concurrency](./posts/notes-on-sequentially-constructive-concurrency.md)
 - [Log 0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./posts/log-0003.md)
 - [Modelling a Backlog Application with Statecharts](./posts/modelling-a-backlog-app-with-statecharts.md)
 
@@ -36,6 +36,7 @@ Imagine a world where you could say "I'm building x app which has 8/10 interacti
 A novel notation to overcome the problems with statecharts at scale.
 
 Motivation - [A DSL for Events](./posts/a-dsl-for-events.md)
+The origing of Eventchart wiring- [The Switchboard Approach to Actor Composition](./posts/the-switchboard-approach-to-actor-composition.md)
 
 ### The History of Reactive Programming
 
