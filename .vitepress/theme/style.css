@@ -22,7 +22,14 @@ nav img {
 }
 
 p img {
-  margin: 0px auto;
+  margin: 0px;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+img {
+  margin-bottom: 0;
+  max-height: 600px;
 }
 
 .prose hr {

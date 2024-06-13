@@ -1,6 +1,6 @@
 ---
 title: The Switchboard Approach to Actor Composition
-date: 2024-06-12
+date: 2024-06-13
 ---
 
 > The act of composing is one of contextualising, making concrete. Potential is turned into actual. A composed entity is by definition less generic than the individual parts composing it. Four lego blocks can be combined in many different ways. Once they are combined, they are in one and only one specific arrangement.
@@ -69,7 +69,7 @@ The higher-order style of actor composition `const composedActor = Log(Debounce(
 
 In a parent-child relationship, the parent has some responsibility for the child, because it exists in the parents context. In processes for example, if the parent is closed/exited then all descendants are as well.
 
-By composing with `const composedActor = Log(Debounce(SomeActor))`, `log` is responsible for the events going to `Debounce`, and `debounce` for the events going to `SomeActor`. But `Log`
+By composing with `const composedActor = Log(Debounce(SomeActor))`, `log` is responsible for the events going to `Debounce`, and `Debounce` for the events going to `SomeActor`. But `Log`
 and `Debounce` are unrelated, so this arrangement is undesirable and the that `Debounce` couldn't stay generic.
 
 ## How to fix it?
@@ -110,13 +110,13 @@ Interestingly, the plain function implementation doesn't suffer from the problem
 
 When a function completes execution, control is returned to the caller. In this example, control starts with `processEvent`, goes into `log`, then back up to `processEvent`.
 
-In the actor example, the control flow isn't going back out each time, it's continuing through to the next actor in the chain. After `log`, `debounce` takes control. It's this difference in control flow that means that in one case `Debounce` needs to change and in the other case it can remain generic.
+In the actor example, the control flow isn't going back out each time, it's continuing through to the next actor in the chain. After `Log`, `Debounce` takes control. It's this difference in control flow that means that in one case `Debounce` needs to change and in the other case it can remain generic.
 
 ## Switchboard
 
 **Switchboards split logic from wiring, and prevent children referencing the outer context**
 
-I propose a solution I call Switchboard:
+I propose Switchboards as a solution:
 
 ```js
 const SwitchboardSystem = (state, event, sendTo) => {
@@ -177,6 +177,6 @@ const Switchboard = (state, event, { origin, sendTo }) => {
 
 ## Summary
 
-- actors are hard to compose because they can directly reference each other
-- references upwards need to be restricted
+- Actors are hard to compose because they can directly reference each other
+- References upwards need to be restricted
 - Switchboard separates wires from logic, and only allows actors to reference children
