@@ -7,7 +7,7 @@ date: 2023-10-01
 
 ## Recent posts
 
-- [The Switchboard Approach to Actor Composition](./posts/the-switchboard-approach-to-actor-composition.md)
+- [A Visual Perception Account of Programming Languages](./posts/notes-on-a-visual-perception-account-of-programming-languages.md)
 - [Notes on Programming Paradigms for Dummies](./posts/notes-on-programming-paradigms-for-dummies)
 - [Log 0003 - researching reactivity, always automaton, the truth about urls, routing down the wrong path, send-on-render](./posts/log-0003.md)
 - [Modelling a Backlog Application with Statecharts](./posts/modelling-a-backlog-app-with-statecharts.md)
@@ -59,6 +59,7 @@ Commonly-used terms without a common definition
 
 - [Sequentially Constructive Concurrency](./posts/notes-on-sequentially-constructive-concurrency.md)
 - [Programming Paradigms for Dummies](./posts/notes-on-programming-paradigms-for-dummies)
+- [A Visual Perception Account of Programming Languages](./posts/notes-on-a-visual-perception-account-of-programming-languages.md)
 
 ## Log
 
