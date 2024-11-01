@@ -26,6 +26,8 @@ Modelling exercises serve as a way to practice and develop techniques that will 
 
 Imagine a world where you could say "I'm building x app which has 8/10 interactive complexity, 5/10 data flow complexity..."
 
+- [Candidate Complexity Metrics](./posts/candidate-complexity-metrics.md)
+
 ### Statecharts
 
 - Where are all the little statecharts?
@@ -47,7 +49,6 @@ The origin of Eventchart wiring- [The Switchboard Approach to Actor Composition]
 Commonly-used terms without a common definition
 
 - [Business Logic](./posts/what-do-we-mean-by-business-logic.md)
-- Business Logic
 - Separation of Concerns
 - Declarative Code
 
